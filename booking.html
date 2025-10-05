@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session - PhotoStudio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">PhotoStudio</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Book Your Session</h1>
+            <p>Let's create something amazing together</p>
+        </div>
+    </section>
+
+    <section class="section booking-section">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info fade-in">
+                    <h2>Why Choose Us?</h2>
+                    <div class="info-item">
+                        <i class="fas fa-camera"></i>
+                        <div>
+                            <h3>Professional Equipment</h3>
+                            <p>State-of-the-art cameras and lighting for stunning results</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <h3>Award-Winning Team</h3>
+                            <p>Experienced photographers with proven excellence</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Quick Turnaround</h3>
+                            <p>Receive your edited photos within 7-14 days</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h3>100% Satisfaction</h3>
+                            <p>We guarantee you'll love your photos or we'll reshoot</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-form-container fade-in">
+                    <form id="bookingForm" class="booking-form">
+                        <h2>Request a Booking</h2>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="eventType">Event Type *</label>
+                            <select id="eventType" name="eventType" required>
+                                <option value="">Select an event type</option>
+                                <option value="wedding">Wedding Photography</option>
+                                <option value="portrait">Portrait Photography</option>
+                                <option value="event">Event Photography</option>
+                                <option value="product">Product Photography</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" name="date" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us more about your photography needs..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn submit-btn">
+                            <span>Submit Booking Request</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3 class="logo">PhotoStudio</h3>
+                <p>Capturing life's precious moments with artistry and passion.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PhotoStudio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
